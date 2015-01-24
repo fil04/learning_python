@@ -1,0 +1,197 @@
+oleh@oleh-N56VM ~ $ python
+Python 2.7.6 (default, Mar 22 2014, 22:59:56) 
+[GCC 4.8.2] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+oleh@oleh-N56VM ~ $ cd work/
+oleh@oleh-N56VM ~/work $ git clone https://github.com/fil04/learning_python.git
+Cloning into 'learning_python'...
+warning: You appear to have cloned an empty repository.
+Checking connectivity... done.
+oleh@oleh-N56VM ~/work $ ll
+total 5932
+drwxr-xr-x 11 oleh oleh    4096 Jan 24 12:28 .
+drwxr-xr-x 37 oleh oleh    4096 Jan 23 23:48 ..
+-rw-------  1 oleh oleh 1420857 Nov  4 01:40 20141104014019.jpg
+drwxr-xr-x  3 oleh oleh    4096 Dec 22 12:43 bootstrap-3.2.0
+-rw-------  1 oleh oleh 2640624 Aug 20 21:02 bootstrap-3.2.0.zip
+-rw-------  1 oleh oleh     540 Oct 20 23:35 Course-2014-10-19.csv
+-rw-------  1 oleh oleh     409 Jan  9 23:49 credentials.txt
+drwxr-xr-x  3 oleh oleh    4096 Dec 22 12:44 downloads
+drwxr-xr-x  8 oleh oleh    4096 Jan 21 23:19 env_mentorhip
+drwxr-xr-x 15 oleh oleh    4096 Dec 22 12:45 espermasters
+drwxr-xr-x  3 oleh oleh    4096 Dec 22 12:45 esper_vagrant
+drwxr-xr-x  2 oleh oleh    4096 Dec 24 23:13 images
+drwxr-xr-x  3 oleh oleh    4096 Jan 24 12:28 learning_python
+-rw-r--r--  1 oleh oleh  637168 Jan 10 19:45 mentorhip_10_01_2015.sql
+-rw-r--r--  1 oleh oleh  687345 Jan 23 00:00 mentorhip_22_01_2015.sql
+drwxr-xr-x  8 oleh oleh    4096 Jan 23 23:48 mentorhiposcar
+-rw-r--r--  1 oleh oleh  630286 Jan  2 18:53 mentorhip_test_02-01-2015.sql
+drwxr-xr-x  3 oleh oleh    4096 Dec 22 12:48 vagrant
+oleh@oleh-N56VM ~/work $ cd learning_python/
+oleh@oleh-N56VM ~/work/learning_python $ ll
+total 12
+drwxr-xr-x  3 oleh oleh 4096 Jan 24 12:28 .
+drwxr-xr-x 11 oleh oleh 4096 Jan 24 12:28 ..
+drwxr-xr-x  7 oleh oleh 4096 Jan 24 12:28 .git
+oleh@oleh-N56VM ~/work/learning_python $ ls
+oleh@oleh-N56VM ~/work/learning_python $ gedit README
+/usr/share/themes/MBuntu-Y-For-Gnome-Fallback/gtk-2.0/widgets/panel.rc:18: Unable to locate image file in pixmap_path: "images/panel/panel-normal.svg"
+/usr/share/themes/MBuntu-Y-For-Gnome-Fallback/gtk-2.0/widgets/panel.rc:21: Background image options specified without filename
+/usr/share/themes/MBuntu-Y-For-Gnome-Fallback/gtk-2.0/widgets/panel.rc:27: Unable to locate image file in pixmap_path: "images/panel/panel-active.svg"
+/usr/share/themes/MBuntu-Y-For-Gnome-Fallback/gtk-2.0/widgets/panel.rc:30: Background image options specified without filename
+/usr/share/themes/MBuntu-Y-For-Gnome-Fallback/gtk-2.0/widgets/panel.rc:61: error: invalid string constant "button", expected valid string constant
+oleh@oleh-N56VM ~/work/learning_python $ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	README
+
+nothing added to commit but untracked files present (use "git add" to track)
+oleh@oleh-N56VM ~/work/learning_python $ git add README 
+oleh@oleh-N56VM ~/work/learning_python $ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   README
+
+oleh@oleh-N56VM ~/work/learning_python $ git commit -m "initial commit"
+[master (root-commit) e9aec35] initial commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README
+oleh@oleh-N56VM ~/work/learning_python $ git push
+Username for 'https://github.com': fil04
+Password for 'https://fil04@github.com': 
+No refs in common and none specified; doing nothing.
+Perhaps you should specify a branch such as 'master'.
+Everything up-to-date
+oleh@oleh-N56VM ~/work/learning_python $ git push origin master
+Username for 'https://github.com': fil04
+Password for 'https://fil04@github.com': 
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 228 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/fil04/learning_python.git
+ * [new branch]      master -> master
+oleh@oleh-N56VM ~/work/learning_python $ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   README
+
+no changes added to commit (use "git add" and/or "git commit -a")
+oleh@oleh-N56VM ~/work/learning_python $ git add README 
+oleh@oleh-N56VM ~/work/learning_python $ git commit -m "second commit"
+[master a21c74d] second commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+oleh@oleh-N56VM ~/work/learning_python $ git push
+Username for 'https://github.com': fil04
+Password for 'https://fil04@github.com': 
+Counting objects: 5, done.
+Writing objects: 100% (3/3), 262 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/fil04/learning_python.git
+   e9aec35..a21c74d  master -> master
+oleh@oleh-N56VM ~/work/learning_python $ git log
+commit a21c74d0ea6a7206fc88e67622fde899550b544c
+Author: Odesk Odesk <odeskcompanyunit@gmail.com>
+Date:   Sat Jan 24 12:47:39 2015 +0200
+
+    second commit
+
+commit e9aec359cecf42dec950123ea34d934cad662c9a
+Author: Odesk Odesk <odeskcompanyunit@gmail.com>
+Date:   Sat Jan 24 12:37:13 2015 +0200
+
+    initial commit
+oleh@oleh-N56VM ~/work/learning_python $ kkf333
+kkf333: command not found
+oleh@oleh-N56VM ~/work/learning_python $ 
+oleh@oleh-N56VM ~/work/learning_python $ 
+oleh@oleh-N56VM ~/work/learning_python $ cd ..
+oleh@oleh-N56VM ~/work $ virtualenv env_learning_python
+New python executable in env_learning_python/bin/python
+Installing setuptools, pip...done.
+oleh@oleh-N56VM ~/work $ ll
+total 5936
+drwxr-xr-x 12 oleh oleh    4096 Jan 24 13:19 .
+drwxr-xr-x 37 oleh oleh    4096 Jan 23 23:48 ..
+-rw-------  1 oleh oleh 1420857 Nov  4 01:40 20141104014019.jpg
+drwxr-xr-x  3 oleh oleh    4096 Dec 22 12:43 bootstrap-3.2.0
+-rw-------  1 oleh oleh 2640624 Aug 20 21:02 bootstrap-3.2.0.zip
+-rw-------  1 oleh oleh     540 Oct 20 23:35 Course-2014-10-19.csv
+-rw-------  1 oleh oleh     409 Jan  9 23:49 credentials.txt
+drwxr-xr-x  3 oleh oleh    4096 Dec 22 12:44 downloads
+drwxr-xr-x  6 oleh oleh    4096 Jan 24 13:19 env_learning_python
+drwxr-xr-x  8 oleh oleh    4096 Jan 21 23:19 env_mentorhip
+drwxr-xr-x 15 oleh oleh    4096 Dec 22 12:45 espermasters
+drwxr-xr-x  3 oleh oleh    4096 Dec 22 12:45 esper_vagrant
+drwxr-xr-x  2 oleh oleh    4096 Dec 24 23:13 images
+drwxr-xr-x  3 oleh oleh    4096 Jan 24 12:45 learning_python
+-rw-r--r--  1 oleh oleh  637168 Jan 10 19:45 mentorhip_10_01_2015.sql
+-rw-r--r--  1 oleh oleh  687345 Jan 23 00:00 mentorhip_22_01_2015.sql
+drwxr-xr-x  8 oleh oleh    4096 Jan 23 23:48 mentorhiposcar
+-rw-r--r--  1 oleh oleh  630286 Jan  2 18:53 mentorhip_test_02-01-2015.sql
+drwxr-xr-x  3 oleh oleh    4096 Dec 22 12:48 vagrant
+oleh@oleh-N56VM ~/work $ ll env_learning_python/
+total 24
+drwxr-xr-x  6 oleh oleh 4096 Jan 24 13:19 .
+drwxr-xr-x 12 oleh oleh 4096 Jan 24 13:19 ..
+drwxr-xr-x  2 oleh oleh 4096 Jan 24 13:19 bin
+drwxr-xr-x  2 oleh oleh 4096 Jan 24 13:19 include
+drwxr-xr-x  3 oleh oleh 4096 Jan 24 13:19 lib
+drwxr-xr-x  2 oleh oleh 4096 Jan 24 13:19 local
+oleh@oleh-N56VM ~/work $ ll env_learning_python/bin
+total 3316
+drwxr-xr-x 2 oleh oleh    4096 Jan 24 13:19 .
+drwxr-xr-x 6 oleh oleh    4096 Jan 24 13:19 ..
+-rw-r--r-- 1 oleh oleh    2216 Jan 24 13:19 activate
+-rw-r--r-- 1 oleh oleh    1272 Jan 24 13:19 activate.csh
+-rw-r--r-- 1 oleh oleh    2485 Jan 24 13:19 activate.fish
+-rw-r--r-- 1 oleh oleh    1129 Jan 24 13:19 activate_this.py
+-rwxr-xr-x 1 oleh oleh     263 Jan 24 13:19 easy_install
+-rwxr-xr-x 1 oleh oleh     263 Jan 24 13:19 easy_install-2.7
+-rwxr-xr-x 1 oleh oleh     235 Jan 24 13:19 pip
+-rwxr-xr-x 1 oleh oleh     235 Jan 24 13:19 pip2
+-rwxr-xr-x 1 oleh oleh     235 Jan 24 13:19 pip2.7
+-rwxr-xr-x 1 oleh oleh 3349512 Jan 24 13:19 python
+lrwxrwxrwx 1 oleh oleh       6 Jan 24 13:19 python2 -> python
+lrwxrwxrwx 1 oleh oleh       6 Jan 24 13:19 python2.7 -> python
+oleh@oleh-N56VM ~/work $ source env_learning_python/bin/activate
+(env_learning_python)oleh@oleh-N56VM ~/work $ pip install -U setuptools
+Downloading/unpacking setuptools from https://pypi.python.org/packages/3.4/s/setuptools/setuptools-12.0.4-py2.py3-none-any.whl#md5=062ffc9b0b1b4b4ff1ade2fd1d6664f8
+  Downloading setuptools-12.0.4-py2.py3-none-any.whl (502kB): 502kB downloaded
+Installing collected packages: setuptools
+  Found existing installation: setuptools 2.2
+    Uninstalling setuptools:
+      Successfully uninstalled setuptools
+Successfully installed setuptools
+Cleaning up...
+(env_learning_python)oleh@oleh-N56VM ~/work $ pip freeze
+argparse==1.2.1
+wsgiref==0.1.2
+(env_learning_python)oleh@oleh-N56VM ~/work $ pip instal -U pip
+ERROR: unknown command "instal" - maybe you meant "install"
+(env_learning_python)oleh@oleh-N56VM ~/work $ pip install -U pip
+Downloading/unpacking pip from https://pypi.python.org/packages/py2.py3/p/pip/pip-6.0.6-py2.py3-none-any.whl#md5=0472d9dc76a0df6cc6ab545e40aef832
+  Downloading pip-6.0.6-py2.py3-none-any.whl (1.3MB): 1.3MB downloaded
+Installing collected packages: pip
+  Found existing installation: pip 1.5.4
+    Uninstalling pip:
+      Successfully uninstalled pip
+Successfully installed pip
+Cleaning up...
+(env_learning_python)oleh@oleh-N56VM ~/work $ 
+
